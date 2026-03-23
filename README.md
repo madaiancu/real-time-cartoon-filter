@@ -1,7 +1,24 @@
-This project is a real-time webcam application built with OpenCV.
+# 🎨 Real-Time Cartoon Filter
 
-Features:
-- Cartoon, sketch, BW and comic filters
+This project is a real-time webcam application built with OpenCV that applies cartoon-style filters to live video.
+
+## 🚀 Features
+- Cartoon filter
+- Sketch filter
+- Black & White filter
 - Face detection
-- Real-time parameter control with trackbars
+- Real-time parameter control
 - Video recording
+
+## 🛠️ Technologies
+- Python
+- OpenCV
+
+## ▶️ How to run
+
+1. Install dependencies:
+```bash
+pip install opencv-python
+
+Run the app:
+python cartoon_filter.py
