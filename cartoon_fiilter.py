@@ -267,7 +267,7 @@ def main():
         else:
             display = output
 
-        # pornire writer doar când știm dimensiunea finală a ferestrei
+      
         if recording and video_writer is None:
             current_video_filename = get_timestamp_filename("screen_recording", "avi")
             fourcc = cv2.VideoWriter_fourcc(*"XVID")
@@ -284,7 +284,7 @@ def main():
         if recording and video_writer is not None:
             video_writer.write(display)
 
-        cv2.imshow("Medium Cartoon Project", display)
+        cv2.imshow(" Cartoon Project", display)
 
         key = cv2.waitKey(1) & 0xFF
 
@@ -306,7 +306,7 @@ def main():
         elif key == ord('v'):
             show_split = not show_split
 
-            # dacă se schimbă dimensiunea display-ului, închidem recordingul curent
+           
             if recording and video_writer is not None:
                 video_writer.release()
                 video_writer = None
@@ -314,7 +314,7 @@ def main():
                 print("Inregistrarea a fost oprita deoarece s-a schimbat modul split/full.")
 
         elif key == ord('s'):
-            filename = get_timestamp_filename("medium_filter", "png")
+            filename = get_timestamp_filename("filter", "png")
             cv2.imwrite(filename, display)
             print(f"Imagine salvata: {filename}")
 
